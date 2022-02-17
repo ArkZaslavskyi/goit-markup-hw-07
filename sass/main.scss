@@ -1,13 +1,13 @@
 @import './utils/vars';
-@import './base/reset';
 @import './utils/placeholders';
+// @import './utils/hidden';
+@import './base/reset';
 @import './base/common';
-@import './utils/hidden';
 @import './base/add';
 
 @import './components/container';
 @import './components/logo';
-@import './components/';
+@import './components/btn';
 
 @import './layout/header';
 @import './layout/hero';

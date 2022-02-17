@@ -10,16 +10,16 @@
   --secondary-font: 'Raleway', sans-serif;
 }
 
+.flex__align-center, .header__wrap, .navigation, .features-icon, .project-overlay {
+  display: flex;
+  align-items: center;
+}
+
 h1,
 h2,
 h3,
 p {
   margin: 0;
-}
-
-.flex__align-center, .header__wrap, .navigation, .features-icon, .project-overlay {
-  display: flex;
-  align-items: center;
 }
 
 body {
@@ -34,19 +34,6 @@ img {
 
 button {
   cursor: pointer;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 
 .section {
@@ -66,6 +53,19 @@ button {
 
 .block {
   display: block;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .container {
@@ -95,6 +95,29 @@ button {
 
 .logo--light {
   color: #fff;
+}
+
+.btn {
+  padding: 10px 32px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  /* identical to box height, 30px or 187% */
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  text-align: center;
+  background: var(--accent-color);
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn:hover, .btn:focus {
+  background-color: #188ce8;
 }
 
 .header {
@@ -178,9 +201,6 @@ button {
   margin-left: 10px;
 }
 
-/* == Header == */
-/* == Main == */
-/* = Hero = */
 .hero {
   max-width: 1600px;
   margin-left: auto;
@@ -204,50 +224,16 @@ button {
   text-transform: uppercase;
 }
 
-.btn {
+.hero__btn {
   margin-top: 30px;
   margin-bottom: 0px;
-  padding: 10px 32px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  /* identical to box height, 30px or 187% */
-  letter-spacing: 0.06em;
-  color: #ffffff;
-  text-align: center;
-  background: var(--accent-color);
-  outline: none;
-  border: none;
-  border-radius: 4px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn:hover,
-.btn:focus {
-  background-color: #188ce8;
-}
-
+/* == Header == */
+/* == Main == */
+/* = Hero = */
 /* = Особенности = */
-.feautures-section {
-  /* padding-bottom: 0; */
-  /* background-color: #ccc; */
-}
-
 /* -- Невидимымый -- */
-.features-title {
-  /* display: none; */
-  /* font-weight: 700;
-    font-size: 36px;
-    line-height: 1.87; */
-  /* 42px or 187% */
-  /* text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--text-dark-color); */
-}
-
 .features-list {
   display: flex;
 }
