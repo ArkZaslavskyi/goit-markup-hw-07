@@ -4,9 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>
-            GoIT HW #5 – Позиционирование элементов, Переходы и Анимация
-        </title>
+        <title>GoIT HW #7 – BEM, SCSS</title>
 
         <!-- Шрифты -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -24,37 +22,38 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         />
         <!-- <link rel="stylesheet" href="./css/normalize.css" /> -->
-        <link rel="stylesheet" href="./css/styles.css" />
+        <link rel="stylesheet" href="./css/main.css" />
+        <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
     </head>
     <body>
         <!-- Шапка страницы -->
-        <header class="header-section">
+        <header class="header">
             <div class="container">
                 <!-- Навигация на главной -->
-                <div class="header-nav">
-                    <nav class="header-nav">
-                        <a class="logo logo-color link" href="./index.html">
-                            Web<span class="logo-black">Studio</span>
+                <div class="header__wrap">
+                    <nav class="navigation">
+                        <a class="logo logo--accent link" href="./index.html">
+                            Web<span class="logo--dark">Studio</span>
                         </a>
 
-                        <ul class="menu-nav">
-                            <li class="item">
+                        <ul class="nav-list list">
+                            <li class="nav-list__item">
                                 <a
-                                    class="menu-nav-text menu-nav-text-dark link"
+                                    class="nav-list__link nav-list__link--dark link block"
                                     href="./index.html"
                                     >Студия</a
                                 >
                             </li>
-                            <li class="item">
+                            <li class="nav-list__item nav-list__current">
                                 <a
-                                    class="menu-nav-text menu-nav-text-dark link menu-current"
+                                    class="nav-list__link nav-list__link--dark link block"
                                     href="./portfolio.html"
                                     >Портфолио</a
                                 >
                             </li>
-                            <li class="item">
+                            <li class="nav-list__item">
                                 <a
-                                    class="menu-nav-text menu-nav-text-dark link"
+                                    class="nav-list__link nav-list__link--dark link block"
                                     href=""
                                     >Контакты</a
                                 >
@@ -62,13 +61,13 @@
                         </ul>
                     </nav>
                     <!-- Ссылки в хедере -->
-                    <ul class="links-nav">
-                        <li class="item">
+                    <ul class="header-links list">
+                        <li class="header-links__item">
                             <a
-                                class="menu-nav-text menu-nav-text-light link link-nav"
+                                class="header-links__link nav-list__link--light link flex__align-center"
                                 href="mailto:info@devstudio.com"
                                 ><svg
-                                    class="link-nav-icon"
+                                    class="header-links__icon header-links__icon--before-text"
                                     width="16"
                                     height="12"
                                 >
@@ -78,12 +77,12 @@
                                 >info@devstudio.com</a
                             >
                         </li>
-                        <li class="item">
+                        <li class="header-links__item">
                             <a
-                                class="menu-nav-text menu-nav-text-light link link-nav"
+                                class="header-links__link nav-list__link--light link flex__align-center"
                                 href="tel:+380961111111"
                                 ><svg
-                                    class="link-nav-icon"
+                                    class="header-links__icon header-links__icon--before-text"
                                     width="10"
                                     height="16"
                                 >
@@ -106,7 +105,7 @@
                     <h1 class="visually-hidden">Портфолио</h1>
 
                     <!-- Портфолио - Фильтры -->
-                    <ul class="filters-list">
+                    <ul class="filters-list list">
                         <li class="item">
                             <button class="portfolio-btn" type="button">
                                 Все
@@ -135,7 +134,7 @@
                     </ul>
 
                     <!-- Портфолио - Проекты -->
-                    <ul class="projects-list">
+                    <ul class="projects-list list">
                         <li class="item">
                             <a class="projects-link link" href="">
                                 <div class="project-thumb">
@@ -372,11 +371,11 @@
             <div class="container">
                 <div class="footer-contain">
                     <div class="logo-address">
-                        <a class="logo logo-color link" href="./index.html">
-                            Web<span class="logo-white">Studio</span>
+                        <a class="logo logo--accent link" href="./index.html">
+                            Web<span class="logo--light">Studio</span>
                         </a>
                         <address class="footer-address">
-                            <ul class="address-list">
+                            <ul class="address-list list">
                                 <li class="item">
                                     <a class="address-light link" href=""
                                         >г. Киев, пр-т Леси Украинки, 26</a
@@ -403,7 +402,7 @@
                     <!-- Блок "Приоединяйтесь" -->
                     <div class="footer-join">
                         <p class="join-text">присоединяйтесь</p>
-                        <ul class="social-links">
+                        <ul class="social-links list">
                             <li class="social-item">
                                 <a
                                     href=""

@@ -1,0 +1,22 @@
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.block {
+    display: block;
+}
+
+.flex__align-center {
+    @extend %wrap-align-center;
+}
