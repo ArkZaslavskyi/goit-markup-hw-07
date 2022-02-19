@@ -367,30 +367,31 @@
         </main>
 
         <!-- Подвал страницы -->
-        <footer class="footer-section">
+        <footer class="footer">
             <div class="container">
-                <div class="footer-contain">
+                <div class="footer__container">
+                    <!-- Лого в Футере -->
                     <div class="logo-address">
                         <a class="logo logo--accent link" href="./index.html">
                             Web<span class="logo--light">Studio</span>
                         </a>
-                        <address class="footer-address">
+                        <address class="footer__address">
                             <ul class="address-list list">
-                                <li class="item">
-                                    <a class="address-light link" href=""
+                                <li class="address-list__item">
+                                    <a class="address--light link" href=""
                                         >г. Киев, пр-т Леси Украинки, 26</a
                                     >
                                 </li>
-                                <li class="item">
+                                <li class="address-list__item">
                                     <a
-                                        class="address-dark link"
+                                        class="address--dark link"
                                         href="mailto:info@example.com"
                                         >info@example.com</a
                                     >
                                 </li>
-                                <li class="item">
+                                <li class="address-list__item">
                                     <a
-                                        class="address-dark link"
+                                        class="address--dark link"
                                         href="tel:+380991111111"
                                         >+38 099 111 11 11</a
                                     >
@@ -401,12 +402,12 @@
 
                     <!-- Блок "Приоединяйтесь" -->
                     <div class="footer-join">
-                        <p class="join-text">присоединяйтесь</p>
-                        <ul class="social-links list">
-                            <li class="social-item">
+                        <p class="footer-join__text">присоединяйтесь</p>
+                        <ul class="social-list footer-join__social-list">
+                            <li class="social-list__item">
                                 <a
+                                    class="social-list__link footer__social-link"
                                     href=""
-                                    class="social-link footer-social-link"
                                 >
                                     <svg width="20" height="20">
                                         <use
@@ -415,10 +416,10 @@
                                     </svg>
                                 </a>
                             </li>
-                            <li class="social-item">
+                            <li class="social-list__item">
                                 <a
+                                    class="social-list__link footer__social-link"
                                     href=""
-                                    class="social-link footer-social-link"
                                 >
                                     <svg width="20" height="20">
                                         <use
@@ -427,10 +428,10 @@
                                     </svg>
                                 </a>
                             </li>
-                            <li class="social-item">
+                            <li class="social-list__item">
                                 <a
+                                    class="social-list__link footer__social-link"
                                     href=""
-                                    class="social-link footer-social-link"
                                 >
                                     <svg width="20" height="20">
                                         <use
@@ -439,10 +440,10 @@
                                     </svg>
                                 </a>
                             </li>
-                            <li class="social-item">
+                            <li class="social-list__item">
                                 <a
+                                    class="social-list__link footer__social-link"
                                     href=""
-                                    class="social-link footer-social-link"
                                 >
                                     <svg width="20" height="20">
                                         <use
@@ -454,17 +455,20 @@
                         </ul>
                     </div>
 
-                    <!-- Форма подписки на рассылку -->
+                    <!-- Блок подписки на рассылку -->
                     <div class="footer-subscription">
-                        <p class="subscription-text">Подпишитесь на рассылку</p>
+                        <p class="footer-subscription__text">
+                            Подпишитесь на рассылку
+                        </p>
+                        <!-- Форма подписки -->
                         <form class="footer-form">
                             <input
-                                class="footer-form-name"
+                                class="footer-form__name"
                                 type="email"
                                 name="mail"
                                 placeholder="E-mail"
                             />
-                            <button class="footer-form-btn" type="submit">
+                            <button class="btn footer-form__btn" type="submit">
                                 Подписаться
                                 <svg class="icon-send" width="24" height="24">
                                     <use href="./img/icons.svg#icon-send"></use>
