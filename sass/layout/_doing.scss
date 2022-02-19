@@ -4,11 +4,6 @@
 
 .doing__title {
     @include setFont(36px, 1.17, 700, 0.03em);
-    // font-weight: 700;
-    // font-size: 36px;
-    // line-height: 1.17;
-    // /* 42px or 117% */
-    // letter-spacing: 0.03em;
     color: var(--text-dark-color);
     text-align: center;
 }
@@ -43,11 +38,6 @@
 
 .doing-list__text {
     @include setFont(14px, 1.14, 700, 0.03em);
-    // font-weight: 700;
-    // font-size: 14px;
-    // line-height: 1.14;
-    // /* 16px or Auto */
-    // letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #ffffff;
 }

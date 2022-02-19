@@ -21,11 +21,6 @@
 
 .hero__title {
     @include setFont(44px, 1.36, 900, 0.06em);
-    // font-weight: 900;
-    // font-size: 44px;
-    // line-height: 1.36;
-    // /* 60px or 136% */
-    // letter-spacing: 0.06em;
     color: #ffffff;
     text-transform: uppercase;
 }

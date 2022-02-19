@@ -52,17 +52,7 @@
 
     @include setFont(14px, 1.2, 500, 0.02em);
 
-    // font-weight: 500;
-    // font-size: 14px;
-    // line-height: 1.2;
-    // /* 16 px */
-    // letter-spacing: 0.02em;
-
     @include funcTransition(color);
-
-    // transition-property: color;
-    // transition-duration: 250ms;
-    // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {

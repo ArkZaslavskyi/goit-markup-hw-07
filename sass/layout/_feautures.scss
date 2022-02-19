@@ -22,11 +22,6 @@
     margin-top: 30px;
 
     @include setFont(14px, 1.2, 700, 0.03em);
-    // font-weight: 700;
-    // font-size: 14px;
-    // line-height: 1.2;
-    // /* 16px or Auto */
-    // letter-spacing: 0.03em;
     text-transform: uppercase;
 
     color: var(--text-dark-color);
@@ -36,10 +31,6 @@
     margin-top: 10px;
 
     @include setFont(14px, 1.71, null, 0.02em);
-    // font-size: 14px;
-    // line-height: 1.71;
-    // /* 24px or 171% */
-    // letter-spacing: 0.03em;
 
     color: var(--text-light-color);
 }
