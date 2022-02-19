@@ -3,11 +3,11 @@
 }
 
 .header__wrap {
-    @extend %wrap-align-center;
+    @include flexAlign(flex, center, null);
 }
 
 .navigation {
-    @extend %wrap-align-center;
+    @include flexAlign(flex, center, null);
 }
 
 // nav-list
@@ -50,15 +50,19 @@
     padding-top: 32px;
     padding-bottom: 32px;
 
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.2;
-    /* 16 px */
-    letter-spacing: 0.02em;
+    @include setFont(14px, 1.2, 500, 0.02em);
 
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    // font-weight: 500;
+    // font-size: 14px;
+    // line-height: 1.2;
+    // /* 16 px */
+    // letter-spacing: 0.02em;
+
+    @include funcTransition(color);
+
+    // transition-property: color;
+    // transition-duration: 250ms;
+    // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {

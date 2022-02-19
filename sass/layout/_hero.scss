@@ -20,16 +20,18 @@
 }
 
 .hero__title {
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    /* 60px or 136% */
+    @include setFont(44px, 1.36, 900, 0.06em);
+    // font-weight: 900;
+    // font-size: 44px;
+    // line-height: 1.36;
+    // /* 60px or 136% */
+    // letter-spacing: 0.06em;
     color: #ffffff;
-    letter-spacing: 0.06em;
     text-transform: uppercase;
 }
 
 .hero__btn {
     margin-top: 30px;
     margin-bottom: 0px;
+    padding: 10px 32px;
 }
