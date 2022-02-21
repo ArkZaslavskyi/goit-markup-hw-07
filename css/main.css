@@ -28,6 +28,16 @@ body {
   font-family: var(--main-font);
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -36,16 +46,6 @@ img {
 
 button {
   cursor: pointer;
-}
-
-.list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.link {
-  text-decoration: none;
 }
 
 .block {
@@ -84,9 +84,6 @@ button {
   line-height: 1.2;
   font-weight: 700;
   letter-spacing: 0.03em;
-}
-
-.logo--accent {
   color: var(--accent-color);
 }
 
@@ -363,6 +360,7 @@ button {
 
 .checkbox__link {
   color: var(--accent-color);
+  text-decoration: underline;
 }
 
 .checkbox__icon {
@@ -461,15 +459,8 @@ button {
 }
 
 .header-links__icon {
-  fill: currentColor;
-}
-
-.header-links__icon--before-text {
   margin-right: 10px;
-}
-
-.header-links__icon--after-text {
-  margin-left: 10px;
+  fill: currentColor;
 }
 
 .hero {

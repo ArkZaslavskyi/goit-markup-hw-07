@@ -2,9 +2,6 @@
     font-family: var(--secondary-font);
 
     @include setFont(26px, 1.2, 700, 0.03em);
-}
-
-.logo--accent {
     color: var(--accent-color);
 }
 
