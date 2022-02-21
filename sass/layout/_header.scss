@@ -45,12 +45,13 @@
     }
 }
 
-.nav-list__link,
-.header-links__link {
+.nav-list__link {
+    display: block;
     padding-top: 32px;
     padding-bottom: 32px;
 
     @include setFont(14px, 1.2, 500, 0.02em);
+    color: var(--text-dark-color);
 
     @include funcTransition(color);
 
@@ -58,14 +59,6 @@
     &:focus {
         color: var(--accent-color);
     }
-}
-
-.nav-list__link--light {
-    color: var(--text-light-color);
-}
-
-.nav-list__link--dark {
-    color: var(--text-dark-color);
 }
 
 // links
@@ -78,6 +71,23 @@
 .header-links__item {
     & + & {
         margin-left: 30px;
+    }
+}
+
+.header-links__link {
+    @include flexAlign(flex, center, null);
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    @include setFont(14px, 1.2, 500, 0.02em);
+    color: var(--text-light-color);
+
+    @include funcTransition(color);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
     }
 }
 
