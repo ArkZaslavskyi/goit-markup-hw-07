@@ -2,3 +2,13 @@
     padding-top: 94px;
     padding-bottom: 94px;
 }
+
+.section--no-padding-top {
+    padding-top: 0px;
+}
+
+.section__title {
+    @include setFont(36px, 1.17, 700, 0.03em);
+    color: var(--text-dark-color);
+    text-align: center;
+}

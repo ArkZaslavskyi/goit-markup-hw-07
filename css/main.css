@@ -78,6 +78,19 @@ button {
   padding-bottom: 94px;
 }
 
+.section--no-padding-top {
+  padding-top: 0px;
+}
+
+.section__title {
+  font-size: 36px;
+  line-height: 1.17;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: var(--text-dark-color);
+  text-align: center;
+}
+
 .logo {
   font-family: var(--secondary-font);
   font-size: 26px;
@@ -537,19 +550,6 @@ button {
   color: var(--text-light-color);
 }
 
-.doing {
-  padding-top: 0;
-}
-
-.doing__title {
-  font-size: 36px;
-  line-height: 1.17;
-  font-weight: 700;
-  letter-spacing: 0.03em;
-  color: var(--text-dark-color);
-  text-align: center;
-}
-
 .doing-list {
   display: flex;
   margin-top: 50px;
@@ -586,15 +586,6 @@ button {
 
 .team {
   background-color: #f5f4fa;
-}
-
-.team__title {
-  font-size: 36px;
-  line-height: 1.17;
-  font-weight: 700;
-  letter-spacing: 0.03em;
-  color: var(--text-dark-color);
-  text-align: center;
 }
 
 .team-list {
