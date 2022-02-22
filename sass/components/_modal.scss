@@ -208,3 +208,11 @@
     border: none;
     background-color: var(--accent-color);
 }
+
+.checkbox:hover + .checkbox__icon {
+    cursor: pointer;
+}
+
+.checkbox:focus + .checkbox__icon {
+    outline: 2px solid var(--accent-color);
+}
