@@ -1,9 +1,5 @@
 .social-list {
-    margin: 0;
-    padding: 0;
-
     @include flexAlign();
-    list-style: none;
 }
 
 .social-list__item {
@@ -23,20 +19,20 @@
 
     border-radius: 50%;
 
-    @include funcTransition(color);
-    @include funcTransition(background-color);
-
-    & svg {
-        fill: currentColor;
-
-        @include funcTransition(fill);
-    }
+    @include funcTransition2Param(color, background-color);
 
     &:hover,
     &:focus {
         color: #ffffff;
         background-color: var(--accent-color);
     }
+}
+
+.social-list__icon {
+    color: inherit;
+    fill: currentColor;
+
+    @include funcTransition(fill);
 }
 
 /* -- -- -- -- */

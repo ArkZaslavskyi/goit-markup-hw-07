@@ -82,6 +82,10 @@ button {
   padding-top: 0px;
 }
 
+.section--team-bg-color {
+  background-color: #f5f4fa;
+}
+
 .section__title {
   font-size: 36px;
   line-height: 1.17;
@@ -129,12 +133,9 @@ button {
 }
 
 .social-list {
-  margin: 0;
-  padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  list-style: none;
 }
 
 .social-list__item {
@@ -153,17 +154,7 @@ button {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  transition-property: color;
-  transition-duration: var(--transition-time);
-  transition-timing-function: var(--transition-function);
-  transition-property: background-color;
-  transition-duration: var(--transition-time);
-  transition-timing-function: var(--transition-function);
-}
-
-.social-list__link svg {
-  fill: currentColor;
-  transition-property: fill;
+  transition-property: color, background-color;
   transition-duration: var(--transition-time);
   transition-timing-function: var(--transition-function);
 }
@@ -171,6 +162,14 @@ button {
 .social-list__link:hover, .social-list__link:focus {
   color: #ffffff;
   background-color: var(--accent-color);
+}
+
+.social-list__icon {
+  color: inherit;
+  fill: currentColor;
+  transition-property: fill;
+  transition-duration: var(--transition-time);
+  transition-timing-function: var(--transition-function);
 }
 
 /* -- -- -- -- */
@@ -240,7 +239,11 @@ button {
   border-radius: 50%;
 }
 
-.modal__close-btn svg {
+.modal__close-btn:active {
+  transform: scale(0.7);
+}
+
+.modal__close-icon {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -253,17 +256,13 @@ button {
   transition-timing-function: var(--transition-function);
 }
 
-.modal__close-btn:hover svg,
-.modal__close-btn:focus svg {
+.modal__close-btn:hover .modal__close-icon,
+.modal__close-btn:focus .modal__close-icon {
   fill: var(--accent-color);
   transform: translate(-50%, -50%) rotate(-180deg);
   transition-property: transform;
   transition-duration: var(--transition-time);
   transition-timing-function: var(--transition-function);
-}
-
-.modal__close-btn:active {
-  transform: scale(0.7);
 }
 
 .modal-title {
@@ -286,7 +285,7 @@ button {
   margin-top: 10px;
 }
 
-.modal-form__field:first-of-type {
+.modal-form__field:first-child {
   margin-top: 0;
 }
 
@@ -296,15 +295,6 @@ button {
   resize: none;
   line-height: 16px;
   color: rgba(117, 117, 117, 0.5);
-}
-
-.modal-form__field:focus-within .modal-form__name {
-  color: var(--text-dark-color);
-  outline-color: var(--accent-color);
-}
-
-.modal-form__field:focus-within .modal-form__icon {
-  fill: var(--accent-color);
 }
 
 .modal-form__label {
@@ -333,6 +323,11 @@ button {
   border-radius: 4px;
 }
 
+.modal-form__field:focus-within .modal-form__name {
+  color: var(--text-dark-color);
+  outline-color: var(--accent-color);
+}
+
 .modal-form__icon {
   display: block;
   position: absolute;
@@ -342,6 +337,10 @@ button {
   left: 12px;
   fill: var(--text-dark-color);
   transform: translateY(-50%);
+}
+
+.modal-form__field:focus-within .modal-form__icon {
+  fill: var(--accent-color);
 }
 
 .modal-form__btn {
@@ -584,10 +583,6 @@ button {
   color: #ffffff;
 }
 
-.team {
-  background-color: #f5f4fa;
-}
-
 .team-list {
   display: flex;
   margin-top: 50px;
@@ -605,7 +600,7 @@ button {
   margin-left: 30px;
 }
 
-.team-sign {
+.team-list__wrap {
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
@@ -625,15 +620,6 @@ button {
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: var(--text-light-color);
-}
-
-.clients__title {
-  font-size: 36px;
-  line-height: 1.17;
-  font-weight: 700;
-  letter-spacing: 0.03em;
-  color: var(--text-dark-color);
-  text-align: center;
 }
 
 .clients-list {
@@ -665,16 +651,17 @@ button {
   transition-timing-function: var(--transition-function);
 }
 
-.clients-list__link svg {
+.clients-list__link:hover, .clients-list__link:focus {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.clients-list__icon {
+  color: inherit;
   fill: currentColor;
   transition-property: fill;
   transition-duration: var(--transition-time);
   transition-timing-function: var(--transition-function);
-}
-
-.clients-list__link:hover, .clients-list__link:focus {
-  color: var(--accent-color);
-  border-color: var(--accent-color);
 }
 
 .footer {

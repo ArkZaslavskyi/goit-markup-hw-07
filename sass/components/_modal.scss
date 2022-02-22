@@ -56,29 +56,29 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
 
-    & svg {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%) scale(1);
-
-        width: 11px;
-        height: 11px;
-        fill: currentColor;
-
-        @include funcTransition2Param(transform, fill);
+    &:active {
+        transform: scale(0.7);
     }
+}
 
-    &:hover svg,
-    &:focus svg {
+.modal__close-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+
+    width: 11px;
+    height: 11px;
+    fill: currentColor;
+
+    @include funcTransition2Param(transform, fill);
+
+    .modal__close-btn:hover &,
+    .modal__close-btn:focus & {
         fill: var(--accent-color);
         transform: translate(-50%, -50%) rotate(-180deg);
 
         @include funcTransition(transform);
-    }
-
-    &:active {
-        transform: scale(0.7);
     }
 }
 
@@ -99,7 +99,7 @@
     width: 100%;
     margin-top: 10px;
 
-    &:first-of-type {
+    &:first-child {
         margin-top: 0;
     }
 
@@ -111,17 +111,6 @@
         line-height: 16px;
 
         color: rgba(117, 117, 117, 0.5);
-    }
-
-    &:focus-within {
-        .modal-form__name {
-            color: var(--text-dark-color);
-            outline-color: var(--accent-color);
-        }
-
-        .modal-form__icon {
-            fill: var(--accent-color);
-        }
     }
 }
 
@@ -148,6 +137,11 @@
 
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+
+    .modal-form__field:focus-within & {
+        color: var(--text-dark-color);
+        outline-color: var(--accent-color);
+    }
 }
 
 .modal-form__icon {
@@ -159,6 +153,10 @@
     left: 12px;
     fill: var(--text-dark-color);
     transform: translateY(-50%);
+
+    .modal-form__field:focus-within & {
+        fill: var(--accent-color);
+    }
 }
 
 .modal-form__btn {
